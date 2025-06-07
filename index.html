@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk how to tell you</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-hearts"></div>
+    <div class="floating-sparkles"></div>
+    <div class="floating-balloons"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img src="image/z.jpg" alt="Our Photo" class="profile-image animate__animated animate__pulse animate__infinite animate__slower"/>
+            <div class="photo-frame"></div>
+        </div>
+
+        <!-- Main Message -->
+        <div class="message-container animate__animated animate__fadeInUp" id="mainMessage">
+            <div class="cute-frame"></div>
+            <div class="stationery-header"></div>
+            <h1>Zayaaa</h1>
+            <p class="message-text">
+                Every moment with you feels like a beautiful dream I never want to wake up from. 
+                I know I'm not perfect and I've made mistakes that hurt you. I'm truly sorry for everything — my actions, my words, or even the times I didn't show up for you. 
+                Can we start over? Give me a chance to make it right this time.
+            </p>
+            <div class="character animate__animated animate__pulse animate__infinite animate__slower">
+                <div class="blush left"></div>
+                <div class="blush right"></div>
+                <div class="eyes"></div>
+                <div class="mouth"></div>
+            </div>
+            <div class="interaction-area">
+                <button id="yesBtn" class="cta-button animate__animated animate__heartBeat animate__infinite animate__slower">Yaayy bebe💖</button>
+                <button id="noBtn" class="playful-button">Convince me more please ✨</button>
+            </div>
+            <div class="response-message animate__animated"></div>
+            <div class="stationery-footer"></div>
+        </div>
+
+        <!-- Success Message -->
+        <div class="message-container hidden animate__animated" id="successMessage">
+            <div class="cute-frame"></div>
+            <div class="stationery-header"></div>
+            <h1 class="animate__animated animate__tada">Horayyy! 🎊</h1>
+            <p class="message-text">You've filled my world with joy and love beyond measure!. I love you so much and thank u for the chance</p>
+            <div class="character happy animate__animated animate__bounce animate__infinite">
+                <div class="sparkle one">✨</div>
+                <div class="sparkle two">✨</div>
+                <div class="sparkle three">✨</div>
+            </div>
+            <p class="message-text">Let's celebrate it with <span class="highlight">ice cream</span>, <span class="highlight">endless cuddles</span>, <span class="highlight">shared dreams</span>, and <span class="highlight">lifetime adventures</span> together!</p>
+            <button id="resetBtn" class="cta-button">Write You Another Love Letter soon 💌</button>
+            <div class="stationery-footer"></div>
+        </div>
+
+        <!-- Convince Message -->
+        <div class="message-container hidden animate__animated" id="convinceMessage">
+            <div class="cute-frame"></div>
+            <div class="stationery-header"></div>
+            <h1 class="animate__animated animate__tada">Oh No! 😢</h1>
+            <p class="message-text">I understand, but I can't let you go without trying to convince you!</p>
+            <div class="character sad animate__animated animate__shakeX">
+                <div class="tear left"></div>
+                <div class="tear right"></div>
+                <div class="eyes"></div>
+                <div class="mouth"></div>
+            </div>
+            <p class="message-text">Please give me a chance to show you how much I care about you. And let's make more beautiful memories together!</p>
+            <button id="tryAgainBtn" class="cta-button">Try Again 💌</button>
+            <div class="stationery-footer"></div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="backgroundMusic" src="music/supernatural.mp3" loop></audio>
+    <!-- Audio tambahan untuk convince -->
+    <audio id="convinceMusic" src="music\niki.mp3" loop></audio>   
+    <audio id="soundEffect" src="https://assets.mixkit.co/sfx/preview/mixkit-happy-bells-notification-937.mp3"></audio>
+    <audio id="heartSound" src="https://assets.mixkit.co/sfx/preview/mixkit-romantic-heart-beat-1490.mp3"></audio>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="playMusicBtn" class="music-button">🎵 Play Our Song</button>
+        <button id="stopMusicBtn" class="music-button">🔇 Pause Music</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
